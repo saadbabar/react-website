@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { siteConfig } from '../siteConfig'
 
 export function Hero() {
@@ -63,12 +64,24 @@ export function Hero() {
   }, [])
 
   return (
-    <div id="home" className="relative h-screen flex items-center justify-center">
+    <div id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
       />
-      <div className="z-10 text-center">
+      <div className="z-10 flex flex-col items-center justify-center text-center">
+        <div className="relative w-64 h-64 mb-8 rounded-full overflow-hidden">
+          <Image
+            src="/IMG_4614.jpg"
+            alt="Hero Image"
+            fill
+            style={{ 
+              objectFit: 'cover',
+              objectPosition: '50% 60%' // Adjusted to focus more on the face
+            }}
+            priority
+          />
+        </div>
         <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-shadow-lg">
           {siteConfig.name}
         </h1>
@@ -81,4 +94,3 @@ export function Hero() {
 }
 
 export default Hero
-
