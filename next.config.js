@@ -4,8 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/react-website' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/react-website' : '',
+  // Remove assetPrefix and basePath if you're not using them
 }
 
 module.exports = nextConfig
