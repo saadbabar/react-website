@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  output: 'export',
   images: {
-    domains: [], // Remove this line if you're not using external domains for images
+    unoptimized: true,
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/react-website' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/react-website' : '',
 }
 
 module.exports = nextConfig
