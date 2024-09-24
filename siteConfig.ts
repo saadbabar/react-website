@@ -7,14 +7,14 @@ export const siteConfig = {
       title: "Software Engineer Intern, Autonomous Systems",
       company: "Noblis",
       period: "June 2024 - August 2024",
-      description: "Developed pipline code using Reinforcement Learning to generate synthetic image datasets to train object detection models for surface transportation.\nTechnologies: Python, PyTorch, Reinforcement Learning, OpenAI Gym, YOLOv8, Gitlab, NumPy, Pandas"
+      description: "Developed pipeline code using Reinforcement Learning to generate synthetic image datasets to train object detection models for surface transportation. The goal was to generate edge case images to train the models on for detecting objects on roads. Using PyTorch, YOLOv8, and Stable Diffusion, our job was to integrate all these technologies that would help us refine text prompts to generate satisfactory images that can be used to train a custom model. \nTechnologies: Python, PyTorch, Reinforcement Learning, OpenAI API, YOLOv8, Gitlab, NumPy, Pandas"
       
     },
     {
       title: "Data Entry Assoicate",
       company: "RHB Laboratories",
       period: "January 2022 - April 2022",
-      description: "Entered insurace CPT codes into company's database using company's software"
+      description: "Entered insurace CPT codes into database using company's software"
     }
   ],
   projects: [
@@ -49,8 +49,8 @@ export const siteConfig = {
       "Probability and Statistics for Engineers",
     ],
     skills: [
-      "Python", "C++", "JavaScript", "React", "Node.js", 
-      "SQL", "Git", "Machine Learning", "Data Analysis", "PyTorch", "Tensorflow", "Jupyter"
+      "Python", "C++", "JavaScript", "React", "Next.js", "HTML/CSS", "LaTex", "R",
+      "SQL", "Git", "Machine Learning", "Data Analysis", "PyTorch", "Jupyter"
     ]
   },
   contact: {
