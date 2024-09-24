@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { siteConfig } from '../siteConfig'
-import Image from 'next/image'
 
 export function Hero() {
   console.log("Hero component rendering");
@@ -70,13 +69,6 @@ export function Hero() {
         className="absolute top-0 left-0 w-full h-full"
       />
       <div className="z-10 text-center">
-        {/*<div className="mb-8 relative w-40 h-40 mx-auto overflow-hidden rounded-full border-4 border-white shadow-lg">
-          <img
-            src="/my-app/public/images/IMG_4614.PNG" // Updated path
-            alt="Profile Picture"
-            className="w-full h-full object-cover"
-          />
-        </div>*/}
         <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-shadow-lg">
           {siteConfig.name}
         </h1>
