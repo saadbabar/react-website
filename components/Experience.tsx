@@ -25,3 +25,5 @@ export function Experience() {
     </section>
   );
 }
+
+export default Experience;
