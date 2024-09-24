@@ -1,7 +1,7 @@
 import React from 'react'
 import { siteConfig } from '../siteConfig'
 
-const Contact = () => {
+export function Contact() {
   return (
     <section id="contact" className="py-16 bg-gray-900 text-white">
       <div className="container mx-auto px-4 text-center">
@@ -21,5 +21,3 @@ const Contact = () => {
     </section>
   )
 }
-
-export default Contact

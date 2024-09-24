@@ -7,7 +7,8 @@ export const siteConfig = {
       title: "Software Engineer Intern, Autonomous Systems",
       company: "Noblis",
       period: "June 2024 - August 2024",
-      description: "Developed pipline code using Reinforcement Learning to generate synthetic image datasets to train object detection models for surface transportation using PyTorch and Jupyter"
+      description: "Developed pipline code using Reinforcement Learning to generate synthetic image datasets to train object detection models for surface transportation.\nTechnologies: Python, PyTorch, Reinforcement Learning, OpenAI Gym, YOLOv8, Gitlab, NumPy, Pandas"
+      
     },
     {
       title: "Data Entry Assoicate",
@@ -20,7 +21,9 @@ export const siteConfig = {
     {
       name: "Leetcode Reminder",
       description: "Developed Chrome Extension to send daily reminders to users to practice Leetcode problems using spaced repitition to retain knowledge",
-      technologies: ["Django", "PostgreSQL", "JavaScript"]
+      technologies: ["Django", "PostgreSQL", "JavaScript"],
+      sourceCode: "https://github.com/saadbabar/LC-Reminder", // Add the source code link here
+      deployedLink: "" // Add the deployed product link here
     },
     {
       name: "Instagram Clone",
@@ -37,7 +40,7 @@ export const siteConfig = {
   education: {
     university: "University of Michigan, Ann Arbor",
     degree: "Bachelor of Science in Computer Science",
-    graduationDate: "May 2026",
+    graduationDate: "April 2026",
     courses: [
       "Data Structures and Algorithms",
       "Computer Organization",
