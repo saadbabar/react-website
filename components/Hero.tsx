@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { siteConfig } from '../siteConfig'
+import Image from 'next/image'
 
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -69,13 +70,14 @@ export function Hero() {
       />
       <div className="z-10 text-center">
         <div className="mb-8 relative w-40 h-40 mx-auto overflow-hidden rounded-full border-4 border-white shadow-lg">
-          <img
-            src="/images/IMG_4614.png"
-            alt="Profile picture"
-            className="absolute w-full h-full object-cover"
-            style={{
-              objectPosition: '50% 65%', // Decreased from 70% to 65% to move the image slightly down
-            }}
+          <Image
+            src="/profile-pic.jpg" // Updated path
+            alt="Profile Picture"
+            width={160}
+            height={160}
+            layout="responsive"
+            objectFit="cover"
+            priority
           />
         </div>
         <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-shadow-lg">
