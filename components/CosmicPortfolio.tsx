@@ -14,5 +14,4 @@ const CosmicPortfolio = () => {
     </div>
   )
 }
-
 export default CosmicPortfolio
