@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/siteConfig';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Search } from './Search';
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +12,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-black bg-opacity-50 shadow-md fixed w-full z-10">
+    <nav className="bg-black bg-opacity-50 shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-xl font-bold text-white">
@@ -25,7 +27,8 @@ export function Navbar() {
           </div>
 
           {/* Navigation links for larger screens */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
+            <Search />
             <Link href="#experience" className="text-gray-300 hover:text-white transition duration-300">Experience</Link>
             <Link href="#education" className="text-gray-300 hover:text-white transition duration-300">Education</Link>
             <Link href="#projects" className="text-gray-300 hover:text-white transition duration-300">Projects</Link>
@@ -34,8 +37,11 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
+        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute left-0 right-0 bg-black bg-opacity-90`}>
           <div className="flex flex-col space-y-4 text-center py-4">
+            <div className="flex justify-center">
+              <Search />
+            </div>
             <Link href="#experience" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white transition duration-300">Experience</Link>
             <Link href="#education" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white transition duration-300">Education</Link>
             <Link href="#projects" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white transition duration-300">Projects</Link>
