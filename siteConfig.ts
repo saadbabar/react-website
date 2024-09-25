@@ -43,10 +43,14 @@ export const siteConfig = {
     graduationDate: "April 2026",
     courses: [
       "Data Structures and Algorithms",
-      "Computer Organization",
-      "Programming and Data Structures",
       "Web Systems",
-      "Probability and Statistics for Engineers",
+      "Human-Centered Software Design & Development",
+      "Computer Organization",
+      "Foundations of Computer Science & Computational Theory",
+      "Applied Linear Algebra",
+      "Discrete Mathematics",
+      "Programming and Introductory Data Structures",
+      "Probability and Statistics for Engineers"
     ],
     skills: [
       "Python", "C++", "JavaScript", "React", "Next.js", "HTML/CSS", "LaTex", "R",
