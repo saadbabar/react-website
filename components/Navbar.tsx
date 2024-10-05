@@ -12,7 +12,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-black bg-opacity-50 shadow-md fixed w-full z-50">
+    <nav className="bg-black bg-opacity-50 shadow-md fixed w-full z-10">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-xl font-bold text-white">
@@ -37,7 +37,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute left-0 right-0 bg-black bg-opacity-90`}>
+        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
           <div className="flex flex-col space-y-4 text-center py-4">
             <div className="flex justify-center">
               <Search />

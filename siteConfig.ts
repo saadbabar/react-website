@@ -7,7 +7,7 @@ export const siteConfig = {
       title: "Software Engineer Intern, Autonomous Systems",
       company: "Noblis",
       period: "June 2024 - August 2024",
-      description: "Developed pipeline code using Reinforcement Learning to generate synthetic image datasets to train object detection models for surface transportation. The goal was to generate edge case images to train the models on for detecting objects on roads. Using PyTorch, YOLOv8, and Stable Diffusion, our job was to integrate all these technologies that would help us refine text prompts to generate satisfactory images that can be used to train a custom model. \nTechnologies: Python, PyTorch, Reinforcement Learning, OpenAI API, YOLOv8, Gitlab, NumPy, Pandas"
+      description: "I, along with my team, developed and optimized an end-to-end pipeline for generating synthetic edge case images using technologies such as OpenAI API, Stable Diffusion, and PyTorch. This work significantly expanded training datasets for autonomous vehicle systems by leveraging generative AI to create complex edge cases for object detection models. I automated the ground truth labeling process for over 100 AI-generated images by developing Python scripts utilizing libraries like Openpyxl and Pandas, integrating YOLOv8 for accurate object detection and annotation. Additionally, I engineered a human-in-the-loop framework and introduced reinforcement learning techniques into the prompt optimization pipeline, improving system adaptability and decision-making for edge case scenarios. I presented the project's outcomes to senior executives, showcasing advancements in automation and AI-driven process efficiency, and demonstrating the measurable improvements made to the pipeline. This role was a mix of backend, computer vision, and machine learning engineering.",
       
     },
     {
@@ -40,7 +40,7 @@ export const siteConfig = {
   education: {
     university: "University of Michigan, Ann Arbor",
     degree: "Bachelor of Science in Computer Science",
-    graduationDate: "April 2026",
+    graduationDate: "May 2026",
     courses: [
       "Data Structures and Algorithms",
       "Web Systems",

@@ -72,12 +72,12 @@ export function Hero() {
       <div className="z-10 flex flex-col items-center justify-center text-center">
         <div className="relative w-64 h-64 mb-8 rounded-full overflow-hidden">
           <Image
-            src="/IMG_4614.jpg"
+            src="/IMG_4877.JPG"
             alt="Hero Image"
             fill
             style={{ 
               objectFit: 'cover',
-              objectPosition: '50% 60%' // Adjusted to focus more on the face
+              objectPosition: '51% 80%' // Adjusted to focus more on the face
             }}
             priority
           />
