@@ -27,8 +27,15 @@ export const siteConfig = {
     },
     {
       name: "Instagram Clone",
-      description: "Developed Instagram clone with a focus on user authentication, post creation, and real-time updates using Flask and similar functionality to Instagram",
-      technologies: ["Flask", "Jinja2", "HTML/CSS"]
+      description: "Developed Instagram clone with a focus on user authentication, post creation, and real-time updates using Flask and similar functionality to Instagram with client-side dynamic pages. Also implemented REST API endpoints for CRUD operations using Flask",
+      technologies: ["Flask", "HTML/CSS", "Python", "React.js", "REST APIs"]
+    },
+    {
+      name: "WallStreetBets NLP Sentiment Analyzer",
+      description: "The main function of this program is to extract the info from the latest posts on a subreddit and present the stocks that are perfroming best on a given day based on Natural Language Processing Analyzing from the posts. This program is a full-stack implementation that integrates APIs, processes data, and presents it visually, providing insights into stock popularity on WallStreetBets.",
+      technologies: ["Django", "PostgreSQL", "TypeScript", "Python", "d3.js", "Reddit API", "Django REST Framework", "Unit Testing", "Financial Modelling Prep API"],
+      sourceCode: "https://github.com/saadbabar/popularStocks", // Add the source code link here
+      deployedLink: "" // Add the deployed product link here
     },
     // Add more projects as needed
     {
