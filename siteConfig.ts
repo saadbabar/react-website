@@ -7,7 +7,7 @@ export const siteConfig = {
       title: "Software Engineer Intern, Autonomous Systems",
       company: "Noblis",
       period: "June 2024 - August 2024",
-      description: "I, along with my team, developed and optimized an end-to-end pipeline for generating synthetic edge case images using technologies such as OpenAI API, Stable Diffusion, and PyTorch. This work significantly expanded training datasets for autonomous vehicle systems by leveraging generative AI to create complex edge cases for object detection models. I automated the ground truth labeling process for over 100 AI-generated images by developing Python scripts utilizing libraries like Openpyxl and Pandas, integrating YOLOv8 for accurate object detection and annotation. Additionally, I engineered a human-in-the-loop framework and introduced reinforcement learning techniques into the prompt optimization pipeline, improving system adaptability and decision-making for edge case scenarios. I presented the project's outcomes to senior executives, showcasing advancements in automation and AI-driven process efficiency, and demonstrating the measurable improvements made to the pipeline. This role was a mix of backend, computer vision, and machine learning engineering.",
+      description: "I developed and optimized an end-to-end pipeline for generating synthetic edge case images using technologies such as OpenAI API, Stable Diffusion, and PyTorch. This work significantly expanded training datasets for autonomous vehicle systems by leveraging generative AI to create complex edge cases for object detection models. I automated the ground truth labeling process for over 100 AI-generated images by developing Python scripts utilizing libraries like Openpyxl and Pandas, integrating YOLOv8 for accurate object detection and annotation. Additionally, I engineered a human-in-the-loop framework and introduced reinforcement learning techniques into the prompt optimization pipeline, improving system adaptability and decision-making for edge case scenarios. I presented the project's outcomes to senior executives, showcasing advancements in automation and AI-driven process efficiency, and demonstrating the measurable improvements made to the pipeline. This role was a mix of backend, computer vision, and machine learning engineering.",
       
     },
     {
@@ -25,24 +25,26 @@ export const siteConfig = {
       sourceCode: "https://github.com/saadbabar/LC-Reminder", // Add the source code link here
       deployedLink: "" // Add the deployed product link here
     },
-    {
-      name: "Instagram Clone",
-      description: "Developed Instagram clone with a focus on user authentication, post creation, and real-time updates using Flask and similar functionality to Instagram with client-side dynamic pages. Also implemented REST API endpoints for CRUD operations using Flask",
-      technologies: ["Flask", "HTML/CSS", "Python", "React.js", "REST APIs"]
-    },
-    {
-      name: "WallStreetBets NLP Sentiment Analyzer",
-      description: "The main function of this program is to extract the info from the latest posts on a subreddit and present the stocks that are perfroming best on a given day based on Natural Language Processing Analyzing from the posts. This program is a full-stack implementation that integrates APIs, processes data, and presents it visually, providing insights into stock popularity on WallStreetBets.",
-      technologies: ["Django", "PostgreSQL", "TypeScript", "Python", "d3.js", "Reddit API", "Django REST Framework", "Unit Testing", "Financial Modelling Prep API"],
-      sourceCode: "https://github.com/saadbabar/popularStocks", // Add the source code link here
-      deployedLink: "" // Add the deployed product link here
-    },
-    // Add more projects as needed
+
     {
       name: "Wire Transfer Model",
       description: "Made banking simulator to replicate how users are autheticated and how transactions are processed through using a priority queue to determine a custom order",
       technologies: ["C++", "Command Line Parsing", "Data Structures"]
+    },
+    {
+      name: "WallStreetBets NLP Sentiment Analyzer",
+      description: "The main function of this program is to extract the info from the latest posts on a subreddit and present the stocks that are perfroming best on a given day based on Natural Language Processing Analyzing from the posts. This program is a full-stack implementation that integrates APIs, processes data, and presents it visually, providing insights into stock popularity on WallStreetBets. The program also performed data filteration tasks such making sure API fulled data only from the NYSE or NASDAQ because the program is intended for US Markets. I also made functions to simplify the data. For example people on a casual forum usually wont say the full name of a company(Example: 'Rivian' instead of 'Rivian Automotive, Inc'). Furthermore, I made unit tests to make sure these functions would worked properly.",
+      technologies: ["Django", "PostgreSQL", "TypeScript", "Python", "d3.js", "Reddit API", "Django REST Framework", "Unit Testing", "Financial Modelling Prep API"],
+      sourceCode: "https://github.com/saadbabar/popularStocks", // Add the source code link here
+      deployedLink: "" // Add the deployed product link here
+    },
+    {
+      name: "Instagram Clone",
+      description: "I developed an Instagram clone with Flask, focusing on user authentication, post creation, and real-time updates. The application features client-side dynamic pages and REST API endpoints for CRUD operations, allowing users to create, edit, and delete posts or comments. I implemented logic to ensure users could only delete their own comments, and handled database updates accordingly. Additionally, I used JavaScript event handlers to create a double-tap 'like' feature, enhancing user interaction. The project includes multiple pages such as login, feed, account management, and more.",
+      technologies: ["Flask", "HTML/CSS", "Python", "React.js", "JavaScript", "REST APIs", "Encryption"]
     }
+    // Add more projects as needed
+    
   ],
   education: {
     university: "University of Michigan, Ann Arbor",
