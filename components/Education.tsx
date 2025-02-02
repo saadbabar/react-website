@@ -1,6 +1,42 @@
 import { siteConfig } from "@/siteConfig";
 import Image from 'next/image';
 
+const skills = [
+  { name: "Python", color: "3776AB", logo: "python" },
+  { name: "C++", color: "00599C", logo: "c%2B%2B" },
+  { name: "C", color: "00599C", logo: "C"},
+  { name: "JavaScript", color: "F7DF1E", logo: "javascript" },
+  { name: "R", color: "276DC3", logo: "R"},
+  { name: "TypeScript", color: "007ACC", logo: "typescript" },
+  { name: "Shell Script", color: "121212", logo: "gnu-bash" },
+  { name: "JSON", color: "5E5C5C", logo: "json"},
+];
+
+const frameworks = [
+  {name: "Cypress", color: "17202C", logo: "cypress"},
+  {name: "d3%20js", color: "F9A03C", logo: "d3.js"},
+  {name: "Docker", color: "2CA5E0", logo: "docker"},
+  {name: "Django", color: "092E30", logo: "django"},
+  {name: "Flask", color: "000000", logo: "flask"},
+  {name: "next%20js", color: "000000", logo: "nextdotjs"},
+  {name: "React", color: "20232A", logo: "react"},
+  {name: "Tailwind_CSS", color: "38B2AC", logo: "tailwind-css"},
+  {name: "PyTorch", color: "EE4C2C", logo: "pytorch"}
+
+]
+
+const tools = [
+  {name: "powershell", color: "5391FE", logo: "powershell"},
+  {name: "iTerm2", color: "000000", logo: "iterm2"},
+  {name: "homebrew", color: "FBB040", logo: "homebrew"},
+  {name: "Zsh", color: "F15A24", logo: "Zsh"},
+  {name: "Amazon_AWS", color: "FF9900", logo: "amazonaws"},
+  {name: "VSCode", color: "0078D4", logo: "visual%20studio%20code"},
+  {name: "Jupyter", color: "F37626", logo: "Jupyter"}
+
+
+]
+
 export function Education() {
   const { education } = siteConfig;
 
@@ -35,11 +71,57 @@ export function Education() {
               
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Skills</h4>
               <div className="flex flex-wrap gap-2">
-                {education.skills.map((skill, index) => (
+                {/* {education.skills.map((skill, index) => (
                   <span key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
                     {skill}
                   </span>
-                ))}
+                ))} */}
+                <div className="badge-container">
+                  {skills.map((skill) => (
+                    <img
+                      key={skill.name}
+                      src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
+                      alt={skill.name}
+                      style={{
+                        height: "30px",
+                        maxWidth: "auto", // Prevents unwanted resizing
+                        objectFit: "contain",
+                      }}
+                    />
+                  ))}
+                </div>
+
+                <h4 className="text-xl font-semibold mb-2 text-gray-800">Libraries and Frameworks</h4>
+                <div className="frameworks-container">
+                  {frameworks.map((f) => (
+                    <img
+                      key={f.name}
+                      src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
+                      alt={f.name}
+                      style={{
+                        height: "30px",
+                        maxWidth: "auto", // Prevents unwanted resizing
+                        objectFit: "contain",
+                      }}
+                    />
+                  ))}
+                </div>
+
+                <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Tools</h4>
+                <div className="tools-container">
+                  {tools.map((f) => (
+                    <img
+                      key={f.name}
+                      src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
+                      alt={f.name}
+                      style={{
+                        height: "30px",
+                        maxWidth: "auto", // Prevents unwanted resizing
+                        objectFit: "contain",
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

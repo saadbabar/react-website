@@ -4,10 +4,10 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Software Engineer Intern, Autonomous Systems",
+      title: "Autonomous Systems Intern, Machine Learning",
       company: "Noblis",
       period: "June 2024 - August 2024",
-      description: "I developed and optimized an end-to-end pipeline for generating synthetic edge case images using technologies such as OpenAI API, Stable Diffusion, and PyTorch. This work significantly expanded training datasets for autonomous vehicle systems by leveraging generative AI to create complex edge cases for object detection models. I automated the ground truth labeling process for over 100 AI-generated images by developing Python scripts utilizing libraries like Openpyxl and Pandas, integrating YOLOv8 for accurate object detection and annotation. Additionally, I engineered a human-in-the-loop framework and introduced reinforcement learning techniques into the prompt optimization pipeline, improving system adaptability and decision-making for edge case scenarios. I presented the project's outcomes to senior executives, showcasing advancements in automation and AI-driven process efficiency, and demonstrating the measurable improvements made to the pipeline. This role was a mix of backend, computer vision, and machine learning engineering.",
+      description: "Prototyped a pipeline that would generate synthetic edge case images to train a LLM. These images were generated to capture anomalies that happen in traffic-prone areas and images where objects (humans) go undetected. Additionally, we focused on researching reinforcement learning and implementing CLIP and Proximal Policy algorithms in the pipeline. Main tech stack included Python, Jupyter, YOLOv8, and Gitlab",
       
     },
     {
@@ -52,15 +52,15 @@ export const siteConfig = {
     graduationDate: "May 2026",
     courses: [
       "Data Structures and Algorithms",
-      "Operating Systems",
-      "Practical Data Science",
+      "Computer Security",
+      "Software Engineering",
       "Web Systems",
       "Human-Centered Software Design & Development",
       "Computer Organization",
       "Foundations of Computer Science & Computational Theory",
       "Applied Linear Algebra",
       "Discrete Mathematics",
-      "Programming and Introductory Data Structures",
+      "Programming in C++",
       "Probability and Statistics for Engineers"
     ],
     skills: [
@@ -71,6 +71,6 @@ export const siteConfig = {
   contact: {
     linkedin: "https://linkedin.com/in/muhammadsaadbabar",
     github: "https://github.com/saadbabar",
-    email: "saad.mbbr@gmail.com"
+    email: "saadbabar.dev@gmail.com"
   }
 }

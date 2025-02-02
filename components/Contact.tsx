@@ -18,9 +18,9 @@ export function Contact() {
           </a>
         </div>
         <div className="flex justify-center py-5">
-          <a href="https://leetcode.com/saadbabar">
+          {/* <a href="https://leetcode.com/saadbabar">
             <img src="https://leetcard.jacoblin.cool/saadbabar?animation=true" alt="Leetcode Stats" />
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

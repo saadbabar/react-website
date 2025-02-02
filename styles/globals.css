@@ -3,3 +3,36 @@
 @tailwind utilities;
 
 /* Your custom styles here */
+
+.badge-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.badge-wrapper {
+    position: relative;
+    display: block;
+    width: 120px;
+    /* Fixed width */
+    height: 30px;
+    /* Fixed height */
+}
+
+.frameworks-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.tools-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
