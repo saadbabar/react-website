@@ -9,7 +9,6 @@ const skills = [
   { name: "R", color: "276DC3", logo: "R"},
   { name: "TypeScript", color: "007ACC", logo: "typescript" },
   { name: "Shell Script", color: "121212", logo: "gnu-bash" },
-  { name: "JSON", color: "5E5C5C", logo: "json"},
 ];
 
 const frameworks = [
@@ -32,7 +31,8 @@ const tools = [
   {name: "Zsh", color: "F15A24", logo: "Zsh"},
   {name: "Amazon_AWS", color: "FF9900", logo: "amazonaws"},
   {name: "VSCode", color: "0078D4", logo: "visual%20studio%20code"},
-  {name: "Jupyter", color: "F37626", logo: "Jupyter"}
+  {name: "Jupyter", color: "F37626", logo: "Jupyter"},
+  { name: "JSON", color: "5E5C5C", logo: "json"},
 
 
 ]
@@ -69,7 +69,7 @@ export function Education() {
                 ))}
               </ul>
               
-              <h4 className="text-xl font-semibold mb-2 text-gray-800">Skills</h4>
+              <h4 className="text-xl font-semibold mb-2 text-gray-800">Programming Languages</h4>
               <div className="flex flex-wrap gap-2">
                 {/* {education.skills.map((skill, index) => (
                   <span key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
