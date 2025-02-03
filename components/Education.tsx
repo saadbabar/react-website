@@ -123,6 +123,10 @@ export function Education() {
                   ))}
                 </div>
               </div>
+              <div className="flex justify-center py-5">
+                <img src="https://github-readme-stats-ebon-seven-65.vercel.app/api/top-langs/?username=saadbabar&layout=pie&exclude_repo=github-readme-stats,github-stats,LC-Reminder,p3-insta485-clientside,popularStocks&langs_count=5&size_weight=0.5&count_weight=0.5&hide=html,css 
+"/>
+              </div>
             </div>
           </div>
         </div>
