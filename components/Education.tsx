@@ -91,7 +91,7 @@ export function Education() {
                   ))}
                 </div>
 
-                <h4 className="text-xl font-semibold mb-2 text-gray-800">Libraries and Frameworks</h4>
+                <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Libraries and Frameworks</h4>
                 <div className="frameworks-container">
                   {frameworks.map((f) => (
                     <img

@@ -1,4 +1,7 @@
 import { siteConfig } from "@/siteConfig";
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
 
 export function Projects() {
   return (
@@ -18,6 +21,13 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+
+                {project.videoUrl && (
+                  <div className="mb-4">
+                    <ReactPlayer url = {project.videoUrl} controls width="100%" height="300px" />
+                  </div>
+                )}
+
                 <div className="flex gap-4">
                   {'sourceCode' in project && project.sourceCode && (
                     <a

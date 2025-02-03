@@ -79,7 +79,6 @@ export function Hero() {
               objectFit: 'cover',
               objectPosition: '25% 30%' // Adjusted to focus more on the face
             }}
-            priority
           />
         </div>
         <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-shadow-lg">

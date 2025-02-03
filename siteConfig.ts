@@ -23,7 +23,8 @@ export const siteConfig = {
       description: "Developed Chrome Extension to send daily reminders to users to practice Leetcode problems using spaced repitition to retain knowledge",
       technologies: ["Django", "PostgreSQL", "JavaScript"],
       sourceCode: "https://github.com/saadbabar/LC-Reminder", // Add the source code link here
-      deployedLink: "" // Add the deployed product link here
+      deployedLink: "",
+      videoUrl: "https://youtu.be/SE2BhQ21nUk"
     },
 
     {
@@ -36,7 +37,8 @@ export const siteConfig = {
       description: "The main function of this program is to extract information from the latest posts on a subreddit and present the top-performing stocks for a given day, using Natural Language Processing (NLP) to analyze the content of the posts. This full-stack implementation integrates multiple APIs, processes data, and visually presents insights into stock trends on WallStreetBets. The program filters data to ensure that only stocks listed on US exchanges like the NYSE or NASDAQ are included, as it's specifically designed for the US markets. Additionally, I created custom functions to simplify data processing, such as recognizing company names as they are casually mentioned in the forum (e.g., identifying 'Rivian' instead of the full name 'Rivian Automotive, Inc'). I also implemented unit tests to validate the functionality of these custom parsing functions, ensuring the program works as expected.",
       technologies: ["Django", "PostgreSQL", "TypeScript", "Python", "d3.js", "Reddit API", "Django REST Framework", "Unit Testing", "Financial Modelling Prep API"],
       sourceCode: "https://github.com/saadbabar/popularStocks", // Add the source code link here
-      deployedLink: "" // Add the deployed product link here
+      deployedLink: "",
+      videoUrl: "https://youtu.be/yaM3HXw87Ho?feature=shared"
     },
     {
       name: "Instagram Clone",
@@ -57,7 +59,7 @@ export const siteConfig = {
       "Web Systems",
       "Human-Centered Software Design & Development",
       "Computer Organization",
-      "Foundations of Computer Science & Computational Theory",
+      "Theory of Computation",
       "Applied Linear Algebra",
       "Discrete Mathematics",
       "Programming in C++",
