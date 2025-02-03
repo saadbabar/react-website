@@ -20,7 +20,9 @@ const frameworks = [
   {name: "next%20js", color: "000000", logo: "nextdotjs"},
   {name: "React", color: "20232A", logo: "react"},
   {name: "Tailwind_CSS", color: "38B2AC", logo: "tailwind-css"},
-  {name: "PyTorch", color: "EE4C2C", logo: "pytorch"}
+  {name: "PyTorch", color: "EE4C2C", logo: "pytorch"},
+  {name: "Postgres", color: "336791", logo: "postgresql"},
+  {name: "SQLite", color: "003B57", logo:"sqlite"}
 
 ]
 
