@@ -72,7 +72,7 @@ export function Education() {
               </ul>
               
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Programming Languages</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 self-center">
                 {/* {education.skills.map((skill, index) => (
                   <span key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
                     {skill}
