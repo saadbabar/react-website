@@ -67,7 +67,7 @@ export function Hero() {
     <div id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       <canvas
         ref={canvasRef}
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full z-0"
       />
       <div className="z-10 flex flex-col items-center justify-center text-center">
         <div className="relative w-64 h-64 mb-8 rounded-full overflow-hidden">

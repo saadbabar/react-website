@@ -1,4 +1,25 @@
 import { siteConfig } from "@/siteConfig";
+import { useState } from "react";
+import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
+
+function ToggleDescription({ job }) {
+  const [isVisible, setIsVisible] = useState(false)
+
+  return (
+    <div className="p-4">
+      <button
+        onClick={() => setIsVisible(!isVisible)}
+        className="bg-zinc-300 inline rounded-full px-2 py-1"
+      >
+        {isVisible ? <FaCaretUp/> : <FaCaretDown/>}
+      </button>
+
+      {isVisible && (
+        <p className="text-gray-700 mt-0">{job.description}</p>
+      )}
+    </div>
+  );
+}
 
 export function Experience() {
   return (
@@ -11,11 +32,11 @@ export function Experience() {
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center z-10">
                 <div className="w-3 h-3 bg-white rounded-full"></div>
               </div>
-              <div className="ml-6 bg-white rounded-lg shadow-md p-6 flex-grow">
+              <div className="ml-4 bg-white rounded-lg shadow-md p-4 flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800">{job.title}</h3>
                 <p className="text-gray-600">{job.company}</p>
-                <p className="text-sm text-gray-500 mb-2">{job.period}</p>
-                <p className="text-gray-700">{job.description}</p>
+                <p className="text-sm text-gray-500 mb-0">{job.period}</p>
+                <ToggleDescription job={job} />
               </div>
             </div>
           ))}
