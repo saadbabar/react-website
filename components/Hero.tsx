@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { siteConfig } from '../siteConfig'
+import { FaRegCopyright, FaLinkedin, FaGithub} from "react-icons/fa";
+import { AiOutlineMail } from 'react-icons/ai';
 
 export function Hero() {
   console.log("Hero component rendering");
@@ -84,9 +86,20 @@ export function Hero() {
         <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-shadow-lg">
           {siteConfig.name}
         </h1>
-        <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
+        <p className="text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
           {siteConfig.tagline}
         </p>
+        <div className="flex justify-center space-x-6 text-2xl">
+          <a href={siteConfig.contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+            <FaLinkedin/>
+          </a>
+          <a href={siteConfig.contact.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-300">
+            <FaGithub/>
+          </a>
+          <a href={`mailto:${siteConfig.contact.email}`} className="text-green-400 hover:text-green-300">
+            <AiOutlineMail/>
+          </a>
+        </div>
       </div>
     </div>
   )
