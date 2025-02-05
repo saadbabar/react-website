@@ -4,17 +4,17 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Autonomous Systems Intern, Machine Learning",
-      company: "Noblis",
-      period: "June 2024 - August 2024",
-      description: "Prototyped a pipeline that would generate synthetic edge case images to train a LLM. These images were generated to capture anomalies that happen in traffic-prone areas and images where objects (humans) go undetected. Additionally, we focused on researching reinforcement learning and implementing CLIP and Proximal Policy algorithms in the pipeline. Main tech stack included Python, Jupyter, YOLOv8, and Gitlab",
+      title: "Autonomous Systems Intern - ML @ Noblis",
+      company: "",
+      period: "Reston, Virginia | June 2024 - August 2024",
+      description: "Prototyped a pipeline that would generate synthetic edge case images to train a LLM. These images were generated to capture anomalies that happen in traffic-prone areas and images where objects (humans) go undetected. Additionally, we focused on researching reinforcement learning and implementing CLIP and Proximal Policy algorithms in the pipeline. Main tech stack included Python, Jupyter, YOLOv8, and Gitlab. I also gained experience working in an agile environment",
       
     },
     {
-      title: "Data Entry Assoicate",
-      company: "RHB Laboratories",
-      period: "January 2022 - April 2022",
-      description: "Entered insurace CPT codes into database using company's software"
+      title: "Data Entry Assoicate @ RHB Laboratories",
+      company: "",
+      period: "Troy, Michigan | January 2022 - April 2022",
+      description: "Entered insurace CPT codes into database using company's software. I didn't really pick up any technical skills here, however, I was able to become faster typer"
     }
   ],
   projects: [

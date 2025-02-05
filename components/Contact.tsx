@@ -1,5 +1,6 @@
 import React from 'react'
 import { siteConfig } from '../siteConfig'
+import { FaRegCopyright} from "react-icons/fa";
 
 export function Contact() {
   return (
@@ -21,6 +22,7 @@ export function Contact() {
           {/* <a href="https://leetcode.com/saadbabar">
             <img src="https://leetcard.jacoblin.cool/saadbabar?animation=true" alt="Leetcode Stats" />
           </a> */}
+          <FaRegCopyright /> &nbsp; 2025 Muhammad Saad Babar. All rights reserved.
         </div>
       </div>
     </section>

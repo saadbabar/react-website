@@ -43,12 +43,12 @@ export function Education() {
   const { education } = siteConfig;
 
   return (
-    <section id="education" className="py-16 bg-gray-50">
+    <section id="education" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl p-6 relative">
+        <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl p-6 relative">
           <div className="flex flex-col sm:flex-row justify-between">
-            <div className="w-full sm:w-48 h-48 relative mb-6 sm:mb-0 sm:ml-4 order-first sm:order-last">
+            {/* <div className="w-full sm:w-48 h-48 relative mb-6 sm:mb-0 sm:ml-4 order-first sm:order-last">
               <Image
                 src="/IMG_4615.jpg"
                 alt="Education Image"
@@ -58,7 +58,7 @@ export function Education() {
                   objectPosition: '50% 50%' // Adjust this to focus on your face
                 }}
               />
-            </div>
+            </div> */}
             <div className="flex-1">
               <h3 className="text-2xl font-semibold mb-3 text-gray-800">{education.university}</h3>
               <p className="text-gray-600 mb-2">{education.degree}</p>
