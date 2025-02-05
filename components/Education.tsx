@@ -1,5 +1,4 @@
 import { siteConfig } from "@/siteConfig";
-import Image from 'next/image';
 
 const skills = [
   { name: "Python", color: "3776AB", logo: "python" },

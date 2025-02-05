@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { siteConfig } from '../siteConfig'
-import { FaRegCopyright, FaLinkedin, FaGithub} from "react-icons/fa";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 import { AiOutlineMail } from 'react-icons/ai';
 
 export function Hero() {

@@ -2,12 +2,12 @@ import { siteConfig } from "@/siteConfig";
 import { useState } from "react";
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 
-interface Job {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-}
+// interface Job {
+//   title: string;
+//   company: string;
+//   period: string;
+//   description: string;
+// }
 
 function ToggleDescription({
   isVisible,
