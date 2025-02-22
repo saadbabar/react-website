@@ -18,6 +18,14 @@ export const siteConfig = {
     }
   ],
   projects: [
+
+    {
+      name: "Concurrent File Downloader",
+      description: "Utilized C++ and its std::thread library to maximize system performance for downloads. The Program allows for used to specify amount of threads they want to allocate for download. I also designed CLI to take an optional argument for the threads, and 2 positional arguments which are the download URL and the output file name, respectively. Additionally, I added a dockerfile for portability and ease of use across platforms.",
+      technologies: ["C++", "Multithreading", "OOP", "Docker", "Optimization", "Makefile", "Encapsulation", "Abstraction", "File I/O"],
+      sourceCode:"https://github.com/saadbabar/Concurrent-File-Downloader",
+      videoURL: "https://youtu.be/Pi6xgX39M-c"
+    },
     {
       name: "Leetcode Reminder",
       description: "Developed Chrome Extension to send daily reminders to users to practice Leetcode problems using spaced repitition to retain knowledge",
@@ -27,11 +35,6 @@ export const siteConfig = {
       videoUrl: "https://youtu.be/SE2BhQ21nUk"
     },
 
-    {
-      name: "Wire Transfer Model",
-      description: "Made banking simulator to replicate how users are autheticated and how transactions are processed through using a priority queue to determine a custom order",
-      technologies: ["C++", "Command Line Parsing", "Data Structures"]
-    },
     {
       name: "WallStreetBets NLP Sentiment Analyzer",
       description: "The main function of this program is to extract information from the latest posts on a subreddit and present the top-performing stocks for a given day, using Natural Language Processing (NLP) to analyze the content of the posts. This full-stack implementation integrates multiple APIs, processes data, and visually presents insights into stock trends on WallStreetBets. The program filters data to ensure that only stocks listed on US exchanges like the NYSE or NASDAQ are included, as it's specifically designed for the US markets. Additionally, I created custom functions to simplify data processing, such as recognizing company names as they are casually mentioned in the forum (e.g., identifying 'Rivian' instead of the full name 'Rivian Automotive, Inc'). I also implemented unit tests to validate the functionality of these custom parsing functions, ensuring the program works as expected.",
