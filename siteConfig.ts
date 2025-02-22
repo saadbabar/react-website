@@ -24,7 +24,7 @@ export const siteConfig = {
       description: "Utilized C++ and its std::thread library to maximize system performance for downloads. The program allows for users to specify amount of threads they want to allocate for download. I also designed CLI to take an optional argument for the threads, and 2 positional arguments which are the download URL and the output file name, respectively. Additionally, I added a dockerfile for portability and ease of use across platforms.",
       technologies: ["C++", "Multithreading", "OOP", "Docker", "Optimization", "Makefile", "Encapsulation", "Abstraction", "File I/O"],
       sourceCode:"https://github.com/saadbabar/Concurrent-File-Downloader",
-      videoUrl: "https://youtu.be/DKzv0WnStoU"
+      videoUrl: "https://youtu.be/Pi6xgX39M-c"
     },
     {
       name: "Leetcode Reminder",
