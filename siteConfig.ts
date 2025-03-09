@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "Muhammad Saad Babar",
-  tagline: "CS Student | Seeking Technical & Business Internships for Summer 2025",
+  tagline: "CS Student | Interested in Full Stack Development, High-Performance Computing, and Tech Consulting",
   navTitle: "Technical Portfolio",
   experience: [
     {
       title: "Autonomous Systems SWE Intern @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
-      description: "Implemented a deep learning pipeline leveraging Python, PyTorch, and CUDA GPU parallel processing to generate synthetic images depicting anomalies in traffic environments. The workflow utilized Stable Diffusion (text-to-image generative modeling) integrated with YOLOv8 for object detection and validation. Designed a reinforcement learning feedback loop to iteratively optimize generated images. Additionally, utilized PyTorch for GPU-accelerated training and inference and Python for data and process scripting.",
+      description: "Implemented a deep learning pipeline leveraging Python, PyTorch, and CUDA GPU parallel processing to generate synthetic images depicting anomalies in traffic environments. The workflow consisted of:\n - Stable Diffusion (text-to-image generative modeling) integrated with YOLOv8 for object detection and validation\n - Designing a reinforcement learning feedback loop to iteratively optimize generated images\n - Utilizing Python for data and process scripting.",
       
     },
     {
