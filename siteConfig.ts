@@ -4,7 +4,7 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Autonomous Systems Intern - ML @ Noblis",
+      title: "Autonomous Systems SWE Intern @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
       description: "Implemented a deep learning pipeline leveraging Python, PyTorch, and CUDA GPU parallel processing to generate synthetic images depicting anomalies in traffic environments. The workflow utilized Stable Diffusion (text-to-image generative modeling) integrated with YOLOv8 for object detection and validation. Designed a reinforcement learning feedback loop to iteratively optimize generated images. Additionally, utilized PyTorch for GPU-accelerated training and inference and Python for data and process scripting.",
