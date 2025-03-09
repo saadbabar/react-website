@@ -7,7 +7,7 @@ export const siteConfig = {
       title: "Autonomous Systems Intern - ML @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
-      description: "Prototyped a pipeline that would generate synthetic edge case images to train a LLM. These images were generated to capture anomalies that happen in traffic-prone areas and images where objects (humans) go undetected. Additionally, we focused on researching reinforcement learning and implementing CLIP and Proximal Policy algorithms in the pipeline. Main tech stack included Python, Jupyter, YOLOv8, and Gitlab. I also gained experience working in an agile environment",
+      description: "Leveraged Python, YOLOv8, Stable Diffusion, and CUDA GPU parallel processing to generate synthetic images depicting anamolies in traffic.\n Main work included creating a pipeline that would leverage reinforcement learning:\n generate image via text-to-image model -> image is evaluted against YOLO object detection -> Ground truth is established -> if image meets requirement, add to dataset, else use reinforcement learning to redefine prompt and run through the process again.\n We researched Proximal Policy alogorithms and CLIP models for reward function implementation within the pipeline for the RL aspect.",
       
     },
     {
