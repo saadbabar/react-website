@@ -7,7 +7,7 @@ export const siteConfig = {
       title: "Autonomous Systems Intern - ML @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
-      description: "Leveraged Python, YOLOv8, Stable Diffusion, and CUDA GPU parallel processing to generate synthetic images depicting anamolies in traffic.\n Main work included creating a pipeline that would leverage reinforcement learning:\n generate image via text-to-image model -> image is evaluted against YOLO object detection -> Ground truth is established -> if image meets requirement, add to dataset, else use reinforcement learning to redefine prompt and run through the process again.\n We researched Proximal Policy alogorithms and CLIP models for reward function implementation within the pipeline for the RL aspect.",
+      description: "Implemented a deep learning pipeline leveraging Python, PyTorch, and CUDA GPU parallel processing to generate synthetic images depicting anomalies in traffic environments. The workflow utilized Stable Diffusion (text-to-image generative modeling) integrated with YOLOv8 for object detection and validation. Designed a reinforcement learning feedback loop to iteratively optimize generated images. Additionally, utilized PyTorch for GPU-accelerated training and inference and Python for data and process scripting.",
       
     },
     {
