@@ -14,7 +14,7 @@ const TypingAnimation = () => {
   return (
     <div className="text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
       <Typewriter
-        text={siteConfig.tagline}
+        text="CS Student | Interested in Full Stack Development, High-Performance Computing, and Tech Consulting"
         cursorColor="white"
         typeSpeed={50}
         deleteSpeed={30}
