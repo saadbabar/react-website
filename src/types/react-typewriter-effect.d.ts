@@ -1,7 +1,7 @@
 declare module "react-typewriter-effect" {
   import React from "react";
 
-  interface TypewriterProps {
+  export interface TypewriterProps {
     text: string;
     cursorColor?: string;
     typeSpeed?: number;

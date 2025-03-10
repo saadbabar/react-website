@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { siteConfig } from "@/siteConfig";
+
 
 const skills = [
   { name: "Python", color: "3776AB", logo: "python" },
@@ -79,7 +81,7 @@ export function Education() {
                 ))} */}
                 <div className="badge-container">
                   {skills.map((skill) => (
-                    <img
+                    <Image
                       key={skill.name}
                       src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
                       alt={skill.name}
@@ -95,7 +97,7 @@ export function Education() {
                 <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Libraries and Frameworks</h4>
                 <div className="frameworks-container">
                   {frameworks.map((f) => (
-                    <img
+                    <Image
                       key={f.name}
                       src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
                       alt={f.name}
@@ -111,7 +113,7 @@ export function Education() {
                 <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Tools</h4>
                 <div className="tools-container">
                   {tools.map((f) => (
-                    <img
+                    <Image
                       key={f.name}
                       src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
                       alt={f.name}
@@ -125,8 +127,12 @@ export function Education() {
                 </div>
               </div>
               <div className="flex justify-center py-5">
-                <img src="https://github-readme-stats-ebon-seven-65.vercel.app/api/top-langs/?username=saadbabar&layout=pie&exclude_repo=github-readme-stats,github-stats,LC-Reminder,p3-insta485-clientside,popularStocks&langs_count=5&size_weight=0.5&count_weight=0.5&hide=html,css 
-"/>
+                <Image
+                  src="https://github-readme-stats-ebon-seven-65.vercel.app/api/top-langs/?username=saadbabar&layout=pie&exclude_repo=github-readme-stats,github-stats,LC-Reminder,p3-insta485-clientside,popularStocks&langs_count=5&size_weight=0.5&count_weight=0.5&hide=html,css"
+                  alt="GitHub Readme Stats"
+                  width={400}  // Adjust width & height for best display
+                  height={300}  
+                />
               </div>
             </div>
           </div>

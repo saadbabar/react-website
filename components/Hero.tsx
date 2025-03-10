@@ -2,27 +2,39 @@
 
 import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { siteConfig } from "../siteConfig";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import Typewriter from "react-typewriter-effect";
 
+const Typewriter = dynamic(() => import("react-typewriter-effect"), {
+  ssr: false,
+}) as unknown as React.FC<TypewriterProps>;
+
+interface TypewriterProps {
+  text: string;
+  cursorColor: string;
+  typeSpeed: number;
+  deleteSpeed: number;
+  delay: number;
+}
+
+const typingProps: TypewriterProps = {
+  text: "CS Student | Interested in Full Stack Development, High-Performance Computing, and Tech Consulting",
+  cursorColor: "white",
+  typeSpeed: 50,
+  deleteSpeed: 30,
+  delay: 1000,
+};
 
 const TypingAnimation = () => {
   return (
     <div className="text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
-      <Typewriter
-        text="CS Student | Interested in Full Stack Development, High-Performance Computing, and Tech Consulting"
-        cursorColor="white"
-        typeSpeed={50}
-        deleteSpeed={30}
-        delay={1000}
-      />
+      <Typewriter {...typingProps} />
     </div>
   );
 };
-
 
 const SlideImage = () => {
   return (
@@ -41,7 +53,6 @@ const SlideImage = () => {
     </motion.div>
   );
 };
-
 
 export function Hero() {
   console.log("Hero component rendering");
