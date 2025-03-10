@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { siteConfig } from "../siteConfig";
 import { FaLinkedin, FaGithub } from "react-icons/fa";

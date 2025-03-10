@@ -5,10 +5,6 @@ import Script from 'next/script'; // Import Script from Next.js
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       {/* Google Analytics Tag */}
       <Script
         strategy="afterInteractive" // Ensure the script loads after the page is interactive
