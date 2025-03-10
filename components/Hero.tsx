@@ -30,13 +30,14 @@ const typingProps: TypewriterProps = {
 
 const TypingAnimation = () => {
   return (
-    <div className="w-full flex justify-center">
-      <p className="text-2xl mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
+    <div className="w-full flex justify-center px-4">
+      <p className="text-2xl mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md max-w-[600px]">
         <Typewriter {...typingProps} />
       </p>
     </div>
   );
 };
+
 
 const SlideImage = () => {
   return (
