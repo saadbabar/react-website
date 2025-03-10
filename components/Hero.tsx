@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { siteConfig } from "../siteConfig";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import Typewriter from "react-typewriter-effect";
 
 
-const Typewriter = dynamic(() => import("react-typewriter-effect"), { ssr: false });
+
+// const Typewriter = dynamic(() => import("react-typewriter-effect"), { ssr: false });
 
 
 const TypingAnimation = () => {
