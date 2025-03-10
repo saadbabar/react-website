@@ -14,13 +14,11 @@ const TypingAnimation = () => {
   return (
     <div className="text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
       <Typewriter
-        {...({
-          text: siteConfig.tagline,
-          cursorColor: "white",
-          typeSpeed: 50,
-          deleteSpeed: 30,
-          delay: 1000,
-        } as any)}
+        text={siteConfig.tagline}
+        cursorColor="white"
+        typeSpeed={50}
+        deleteSpeed={30}
+        delay={1000}
       />
     </div>
   );
