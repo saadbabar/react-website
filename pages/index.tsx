@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Saad</title>
+        <title>Saad Portfolio</title>
         <meta name="description" content="Personal website of Your Name" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

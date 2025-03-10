@@ -15,7 +15,7 @@ export function Navbar() {
     <nav className="bg-black bg-opacity-50 shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-xl font-bold text-white">
+          <Link href="/" className="text-xl text-white font-cursive">
             {siteConfig.navTitle}
           </Link>
 

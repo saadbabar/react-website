@@ -42,7 +42,7 @@ export function Education() {
   const { education } = siteConfig;
 
   return (
-    <section id="education" className="py-16 bg-gray-100">
+    <section id="education" className="py-16 ">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
         <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl p-6 relative">
