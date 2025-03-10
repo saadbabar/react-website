@@ -1,19 +1,26 @@
+"use client";
+import "../types/react-typewriter-effect";
+
+
+
 import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { siteConfig } from "../siteConfig";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import Typewriter from "react-typewriter-effect";
+// import Typewriter from "react-typewriter-effect";
 
 
 
-// const Typewriter = dynamic(() => import("react-typewriter-effect"), { ssr: false });
+const Typewriter = dynamic(() => import("react-typewriter-effect"), { ssr: false });
 
 
 const TypingAnimation = () => {
   return (
     <div className="text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
+      // @ts-expect-error
       <Typewriter
         text="CS Student | Interested in Full Stack Development, High-Performance Computing, and Tech Consulting"
         cursorColor="white"
