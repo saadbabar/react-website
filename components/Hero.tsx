@@ -30,8 +30,10 @@ const typingProps: TypewriterProps = {
 
 const TypingAnimation = () => {
   return (
-    <div className="text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
-      <Typewriter {...typingProps} />
+    <div className="w-full flex justify-center">
+      <p className="text-2xl mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-cyan-200 to-blue-200 text-shadow-md">
+        <Typewriter {...typingProps} />
+      </p>
     </div>
   );
 };
