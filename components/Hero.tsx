@@ -1,20 +1,12 @@
 "use client";
-import "../types/react-typewriter-effect";
-
-
 
 import React from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { siteConfig } from "../siteConfig";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-// import Typewriter from "react-typewriter-effect";
-
-
-
-const Typewriter = dynamic(() => import("react-typewriter-effect"), { ssr: false });
+import Typewriter from "react-typewriter-effect";
 
 
 const TypingAnimation = () => {
