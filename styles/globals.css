@@ -37,3 +37,12 @@
     text-align: center;
     align-items: center;
 }
+
+html,
+body {
+    background-color: rgb(23, 28, 40);
+    /* Match the dark theme */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

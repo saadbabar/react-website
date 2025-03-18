@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { siteConfig } from "@/siteConfig";
-
+import { motion } from "framer-motion";
 
 const skills = [
   { name: "Python", color: "3776AB", logo: "python" },
@@ -44,100 +46,138 @@ export function Education() {
   const { education } = siteConfig;
 
   return (
-    <section id="education" className="py-16 ">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
-        <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl p-6 relative">
-          <div className="flex flex-col sm:flex-row justify-between">
-            {/* <div className="w-full sm:w-48 h-48 relative mb-6 sm:mb-0 sm:ml-4 order-first sm:order-last">
-              <Image
-                src="/IMG_4615.jpg"
-                alt="Education Image"
-                fill
-                style={{ 
-                  objectFit: 'cover',
-                  objectPosition: '50% 50%' // Adjust this to focus on your face
-                }}
-              />
-            </div> */}
-            <div className="flex-1">
-              <h3 className="text-2xl font-semibold mb-3 text-gray-800">{education.university}</h3>
-              <p className="text-gray-600 mb-2">{education.degree}</p>
-              <p className="text-gray-600 mb-4">Graduation: {education.graduationDate}</p>
-              
-              <h4 className="text-xl font-semibold mb-2 text-gray-800">Relevant Courses</h4>
-              <ul className="list-disc list-inside mb-4">
-                {education.courses.map((course, index) => (
-                  <li key={index} className="text-gray-600">{course}</li>
-                ))}
-              </ul>
-              
-              <h4 className="text-xl font-semibold mb-2 text-gray-800">Programming Languages</h4>
-              <div className="flex flex-wrap gap-2 self-center">
-                {/* {education.skills.map((skill, index) => (
-                  <span key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-                    {skill}
-                  </span>
-                ))} */}
-                <div className="badge-container">
-                  {skills.map((skill) => (
-                    <Image
-                      key={skill.name}
-                      src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
-                      alt={skill.name}
-                      style={{
-                        height: "30px",
-                        maxWidth: "auto", // Prevents unwanted resizing
-                        objectFit: "contain",
-                      }}
-                    />
-                  ))}
-                </div>
+    <motion.section
+      id="education"
+      className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+    >
+      <div className="container mx-auto px-6">
+        <motion.h2
+          className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
+          Education
+        </motion.h2>
 
-                <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Libraries and Frameworks</h4>
-                <div className="frameworks-container">
-                  {frameworks.map((f) => (
-                    <Image
-                      key={f.name}
-                      src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
-                      alt={f.name}
-                      style={{
-                        height: "30px",
-                        maxWidth: "auto", // Prevents unwanted resizing
-                        objectFit: "contain",
-                      }}
-                    />
-                  ))}
-                </div>
-
-                <h4 className="text-xl font-semibold mb-2 text-gray-800 w-full">Tools</h4>
-                <div className="tools-container">
-                  {tools.map((f) => (
-                    <Image
-                      key={f.name}
-                      src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
-                      alt={f.name}
-                      style={{
-                        height: "30px",
-                        maxWidth: "auto", // Prevents unwanted resizing
-                        objectFit: "contain",
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className="flex justify-center py-5">
-                <Image
-                  src="https://github-readme-stats-ebon-seven-65.vercel.app/api/top-langs/?username=saadbabar&layout=pie&exclude_repo=github-readme-stats,github-stats,LC-Reminder,p3-insta485-clientside,popularStocks&langs_count=5&size_weight=0.5&count_weight=0.5&hide=html,css"
-                  alt="GitHub Readme Stats"
-                  width={400}  // Adjust width & height for best display
-                  height={300}  
-                />
-              </div>
-            </div>
+        <motion.div
+          className="bg-gray-800 bg-opacity-75 backdrop-blur-lg rounded-lg shadow-lg p-8 transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
+          <div className="text-center">
+            <h3 className="text-2xl font-semibold text-white">{education.university}</h3>
+            <p className="text-gray-400">{education.degree}</p>
+            <p className="text-gray-500 mb-6">Graduation: {education.graduationDate}</p>
           </div>
-        </div>
+
+          <h4 className="text-xl font-semibold mb-4 text-blue-400">Relevant Courses</h4>
+          <motion.ul
+            className="list-disc list-inside mb-6 text-gray-300"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ staggerChildren: 0.2 }}
+          >
+            {education.courses.map((course, index) => (
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                {course}
+              </motion.li>
+            ))}
+          </motion.ul>
+
+          <h4 className="text-xl font-semibold mb-4 text-purple-400">Programming Languages</h4>
+          <motion.div className="flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg"
+              >
+                <Image
+                  src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
+                  alt={skill.name}
+                  width={120}
+                  height={30}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <h4 className="text-xl font-semibold mt-6 mb-4 text-blue-400">Frameworks</h4>
+          <motion.div className="flex flex-wrap gap-3">
+            {frameworks.map((f) => (
+              <motion.div
+                key={f.name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="p-2 bg-gray-700 rounded-lg shadow-md"
+              >
+                <Image
+                  src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
+                  alt={f.name}
+                  width={120}
+                  height={30}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <h4 className="text-xl font-semibold mt-6 mb-4 text-purple-400">Tools</h4>
+          <motion.div className="flex flex-wrap gap-3">
+            {tools.map((f) => (
+              <motion.div
+                key={f.name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="p-2 bg-gray-700 rounded-lg shadow-md"
+              >
+                <Image
+                  src={`https://img.shields.io/badge/${f.name}-${f.color}?style=for-the-badge&logo=${f.logo}&logoColor=white`}
+                  alt={f.name}
+                  width={120}
+                  height={30}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="flex justify-center mt-16"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
+          <div className="bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-center text-xl font-semibold text-blue-400 mb-4">GitHub Contributions</h3>
+            <img
+              alt="GitHub Readme Stats"
+              loading="lazy"
+              width="400"
+              height="300"
+              decoding="async"
+              src="https://github-readme-stats-ebon-seven-65.vercel.app/api/top-langs/?username=saadbabar&layout=pie&exclude_repo=github-readme-stats,github-stats,LC-Reminder,p3-insta485-clientside,popularStocks&langs_count=5&size_weight=0.5&count_weight=0.5&hide=html,css"
+              className="rounded-lg shadow-lg border border-gray-700"
+            />
+          </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
