@@ -4,10 +4,10 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Machine Learning Intern @ Noblis",
+      title: "Software Engineering Intern @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
-      description: "Implemented a deep learning pipeline leveraging Python, PyTorch, and CUDA GPU parallel processing to generate synthetic images depicting anomalies in traffic environments. The workflow consisted of: Stable Diffusion (text-to-image generative modeling) integrated with YOLOv8 for object detection and validation. We also were designing a reinforcement learning feedback loop to iteratively optimize generated images. Additionally, we utilized Python for data and process scripting.",
+      description: "I built tools to support autonomous systems testing, including a PyTorch pipeline to simulate 100+ edge cases and a Python microservice to automate YOLO output analysis, cutting reporting time by 85%. I optimized Stable Diffusion processing by 40% using CUDA, documented workflows in Confluence, and presented progress to 70+ executives.",
       
     },
     {
