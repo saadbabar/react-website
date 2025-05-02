@@ -4,7 +4,7 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Incoming Software Engineer Intern Criteo",
+      title: "Incoming Software Engineer Intern @ Criteo",
       company: "",
       period: "Ann Arbor, Michigan | May 2025 - August 2025",
       description: "adtech recommender systems, FAB full-stack team",
