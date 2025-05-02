@@ -4,7 +4,14 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Software Engineering Intern @ Noblis",
+      title: "Incoming Software Engineer Intern Criteo",
+      company: "",
+      period: "Ann Arbor, Michigan | May 2025 - August 2025",
+      description: "adtech recommender systems, FAB full-stack team",
+      
+    },
+    {
+      title: "Software Engineer Intern @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
       description: "I built tools to support autonomous systems testing, including a PyTorch pipeline to simulate 100+ edge cases and a Python microservice to automate YOLO output analysis, cutting reporting time by 85%. I optimized Stable Diffusion processing by 40% using CUDA, documented workflows in Confluence, and presented progress to 70+ executives.",
