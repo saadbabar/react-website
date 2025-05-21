@@ -84,7 +84,14 @@ export function Experience() {
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <p className="text-gray-300 mt-2">{job.description}</p>
+                  {job.description
+                  .split("\n")
+                  .filter(p => p.trim() !== "")
+                  .map((paragraph, i) => (
+                    <p key={i} className="text-gray-300 mt-2">
+                      {paragraph.trim()}
+                    </p>
+                  ))}
                 </motion.div>
               </motion.div>
             </motion.div>

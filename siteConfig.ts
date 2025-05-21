@@ -4,18 +4,35 @@ export const siteConfig = {
   navTitle: "Technical Portfolio",
   experience: [
     {
-      title: "Incoming Software Engineer Intern @ Criteo",
+      title: "Software Engineer Intern @ Criteo",
       company: "",
       period: "Ann Arbor, Michigan | May 2025 - August 2025",
-      description: "adtech recommender systems, FAB full-stack team",
+      description: `Interned for the Forcastings and Bookings Team working on Criteo's Retail Media Planning UI
+      
+      Contributed to the development of Criteo’s customer-facing retail media planning UI, enhancing advertiser capabilities to self-serve campaign forecasting and impression estimation using historical and real-time data.
+
+Implemented new UI features within an Angular/.NET microservices architecture, enabling dynamic updates of inventory projections and budget simulations such as adding the CPM bid (Cost Per Impression) feature which only showed up if Auction was selected for buy type.
+
+Collaborated within a 6+ engineer Agile team, resolving JIRA-tracked issues and participating in daily standups and 2-week sprint planning to support iterative product delivery.
+
+Tech Stack: C#, .NET Core, Angular, Git, Geritt, JIRA, Confluence, TypeScript`
       
     },
     {
-      title: "Software Engineer Intern @ Noblis",
+      title: "ML Intern - Autonomous Systems @ Noblis",
       company: "",
       period: "Reston, Virginia | June 2024 - August 2024",
-      description: "I built tools to support autonomous systems testing, including a PyTorch pipeline to simulate 100+ edge cases and a Python microservice to automate YOLO output analysis, cutting reporting time by 85%. I optimized Stable Diffusion processing by 40% using CUDA, documented workflows in Confluence, and presented progress to 70+ executives.",
+      description: `Interned under the Surface Transportation Team
       
+      Contributed to R&D efforts in generative AI for simulating rare and high-risk roadway edge cases, improving training coverage for autonomous vehicle perception systems.
+
+Designed a reinforcement learning feedback loop for image generation: synthesized scenes using text-to-image models, evaluated object detection vs. ground truth, and applied CLIP-based reward signals to iteratively optimize prompts and generate more challenging scenarios.
+
+Sourced and curated diverse image datasets to support model generalization across edge-case conditions (occluded pedestrians, low-visibility signage) from various sources like Kaggle and Hugging Face.
+
+I also presented project outcomes to company executives at the end of project, highlighting key improvements and the benefits of AI integration
+
+Tech Stack: Python, PyTorch, YOLOv8, CUDA`
     },
     {
       title: "Data Entry Assoicate @ RHB Laboratories",
@@ -61,19 +78,21 @@ export const siteConfig = {
   education: {
     university: "University of Michigan, Ann Arbor",
     degree: "Bachelor of Science in Computer Science",
-    graduationDate: "May 2026",
+    graduationDate: "December 2025",
     courses: [
-      "Data Structures and Algorithms",
-      "Computer Security",
-      "Software Engineering",
-      "Web Systems",
-      "Human-Centered Software Design & Development",
-      "Computer Organization",
-      "Theory of Computation",
-      "Applied Linear Algebra",
-      "Discrete Mathematics",
-      "Programming in C++",
-      "Probability and Statistics for Engineers"
+      "EECS 281: Data Structures and Algorithms",
+      "EECS 388: Computer Security",
+      "EECS 481: Software Engineering",
+      "EECS 485: Web Systems",
+      "EECS 497: Human-Centered Software Design & Development",
+      "EECS 370: Computer Organization",
+      "EECS 376: Theory of Computation",
+      "MATH 214: Applied Linear Algebra",
+      "EECS 203: Discrete Mathematics",
+      "EECS 280: Programming in C++",
+      "IOE 265: Probability and Statistics for Engineers",
+      "EECS 482: Operating Systems - Upcoming",
+      "EECS 201: Computer Science Pragmatics - Upcoming"
     ],
     skills: [
       "Python", "C/C++", "JavaScript", "React", "Next.js", "HTML/CSS", "LaTex", "R",

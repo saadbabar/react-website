@@ -4,43 +4,43 @@ import Image from "next/image";
 import { siteConfig } from "@/siteConfig";
 import { motion } from "framer-motion";
 
-const skills = [
-  { name: "Python", color: "3776AB", logo: "python" },
-  { name: "C++", color: "00599C", logo: "c%2B%2B" },
-  { name: "C", color: "00599C", logo: "C"},
-  { name: "JavaScript", color: "F7DF1E", logo: "javascript" },
-  { name: "R", color: "276DC3", logo: "R"},
-  { name: "TypeScript", color: "007ACC", logo: "typescript" },
-  { name: "Shell Script", color: "121212", logo: "gnu-bash" },
-];
+// const skills = [
+//   { name: "Python", color: "3776AB", logo: "python" },
+//   { name: "C++", color: "00599C", logo: "c%2B%2B" },
+//   { name: "C", color: "00599C", logo: "C"},
+//   { name: "JavaScript", color: "F7DF1E", logo: "javascript" },
+//   { name: "R", color: "276DC3", logo: "R"},
+//   { name: "TypeScript", color: "007ACC", logo: "typescript" },
+//   { name: "Shell Script", color: "121212", logo: "gnu-bash" },
+// ];
 
-const frameworks = [
-  {name: "Cypress", color: "17202C", logo: "cypress"},
-  {name: "d3%20js", color: "F9A03C", logo: "d3.js"},
-  {name: "Docker", color: "2CA5E0", logo: "docker"},
-  {name: "Django", color: "092E30", logo: "django"},
-  {name: "Flask", color: "000000", logo: "flask"},
-  {name: "next%20js", color: "000000", logo: "nextdotjs"},
-  {name: "React", color: "20232A", logo: "react"},
-  {name: "Tailwind_CSS", color: "38B2AC", logo: "tailwind-css"},
-  {name: "PyTorch", color: "EE4C2C", logo: "pytorch"},
-  {name: "Postgres", color: "336791", logo: "postgresql"},
-  {name: "SQLite", color: "003B57", logo:"sqlite"}
+// const frameworks = [
+//   {name: "Cypress", color: "17202C", logo: "cypress"},
+//   {name: "d3%20js", color: "F9A03C", logo: "d3.js"},
+//   {name: "Docker", color: "2CA5E0", logo: "docker"},
+//   {name: "Django", color: "092E30", logo: "django"},
+//   {name: "Flask", color: "000000", logo: "flask"},
+//   {name: "next%20js", color: "000000", logo: "nextdotjs"},
+//   {name: "React", color: "20232A", logo: "react"},
+//   {name: "Tailwind_CSS", color: "38B2AC", logo: "tailwind-css"},
+//   {name: "PyTorch", color: "EE4C2C", logo: "pytorch"},
+//   {name: "Postgres", color: "336791", logo: "postgresql"},
+//   {name: "SQLite", color: "003B57", logo:"sqlite"}
 
-]
+// ]
 
-const tools = [
-  {name: "powershell", color: "5391FE", logo: "powershell"},
-  {name: "iTerm2", color: "000000", logo: "iterm2"},
-  {name: "homebrew", color: "FBB040", logo: "homebrew"},
-  {name: "Zsh", color: "F15A24", logo: "Zsh"},
-  {name: "Amazon_AWS", color: "FF9900", logo: "amazonaws"},
-  {name: "VSCode", color: "0078D4", logo: "visual%20studio%20code"},
-  {name: "Jupyter", color: "F37626", logo: "Jupyter"},
-  { name: "JSON", color: "5E5C5C", logo: "json"},
+// const tools = [
+//   {name: "powershell", color: "5391FE", logo: "powershell"},
+//   {name: "iTerm2", color: "000000", logo: "iterm2"},
+//   {name: "homebrew", color: "FBB040", logo: "homebrew"},
+//   {name: "Zsh", color: "F15A24", logo: "Zsh"},
+//   {name: "Amazon_AWS", color: "FF9900", logo: "amazonaws"},
+//   {name: "VSCode", color: "0078D4", logo: "visual%20studio%20code"},
+//   {name: "Jupyter", color: "F37626", logo: "Jupyter"},
+//   { name: "JSON", color: "5E5C5C", logo: "json"},
 
 
-]
+// ]
 
 export function Education() {
   const { education } = siteConfig;
@@ -64,12 +64,12 @@ export function Education() {
           Education
         </motion.h2>
 
-        <motion.div
+        {/* <motion.div
           className="bg-gray-800 bg-opacity-75 backdrop-blur-lg rounded-lg shadow-lg p-8 transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-        >
+        > */}
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-white">{education.university}</h3>
             <p className="text-gray-400">{education.degree}</p>
@@ -96,27 +96,27 @@ export function Education() {
             ))}
           </motion.ul>
 
-          <h4 className="text-xl font-semibold mb-4 text-purple-400">Programming Languages</h4>
-          <motion.div className="flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <motion.div
-                key={skill.name}
+          {/* <h4 className="text-xl font-semibold mb-4 text-purple-400">Programming Languages</h4> */}
+          {/* <motion.div className="flex flex-wrap gap-3"> */}
+            {/* {skills.map((skill) => ( */}
+              {/* <motion.div
+                // key={skill.name}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg"
-              >
-                <Image
-                  src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
-                  alt={skill.name}
-                  width={120}
-                  height={30}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
+              > */}
+                {/* <Image */}
+                  {/* // src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.logo}&logoColor=white`}
+                  // alt={skill.name}
+                  // width={120}
+                  // height={30}
+                /> */}
+              {/* </motion.div> */}
+            {/* ))} */}
+          {/* </motion.div> */}
 
-          <h4 className="text-xl font-semibold mt-6 mb-4 text-blue-400">Frameworks</h4>
+          {/* <h4 className="text-xl font-semibold mt-6 mb-4 text-blue-400">Frameworks</h4>
           <motion.div className="flex flex-wrap gap-3">
             {frameworks.map((f) => (
               <motion.div
@@ -155,7 +155,7 @@ export function Education() {
               </motion.div>
             ))}
           </motion.div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex justify-center mt-16"

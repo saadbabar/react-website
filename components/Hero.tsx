@@ -48,7 +48,7 @@ const SlideImage = () => {
       className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg"
     >
       <Image
-        src="/IMG_8009.jpeg"
+        src="/IMG_9104.PNG"
         alt="Hero Image"
         fill
         className="object-cover object-center"
