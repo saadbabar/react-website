@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { siteConfig } from "@/siteConfig";
 import { motion } from "framer-motion";
 
